@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ZillowProperty</string>
+    <string name="action_settings">Settings</string>
+    <string name="heading"> Search Your Property Here</string>
+    <string name="address">Address*:</string>
+    <string name="city">City*:</string>
+    <string name="state">State*:</string>
+    <string name="edit_address">Street Address</string>
+    <string name="search">Search</string>
+    <string name="edit_city">City</string>
+    <string name="choose_state">Choose State</string>
+    <string name="Prop_Type">Property Type</string>
+    <string name="year_built">Year Built</string>
+    <string name="facebook_app_id">312963502247946</string><string name="seemore">See more details on Zillow:</string>
+    
+    <string name="line">________________________________________</string>
+
+    <string-array name="state_array">
+        <item>AK</item>
+        <item>AZ</item>
+        <item>AR</item>
+        <item>CA</item>
+        <item>CO</item>
+        <item>CT</item>
+        <item>DE</item>
+        <item>DC</item>
+        <item>FL</item>
+        <item>GA</item>
+        <item>HI</item>
+        <item>ID</item>
+        <item>IL</item>
+        <item>IN</item>
+        <item>IA</item>
+        <item>KS</item>
+        <item>KY</item>
+        <item>LA</item>
+        <item>ME</item>
+        <item>MD</item>
+        <item>MA</item>
+        <item>MI</item>
+        <item>MN</item>
+        <item>MS</item>
+        <item>MO</item>
+        <item>MT</item>
+        <item>NE</item>
+        <item>NV</item>
+        <item>NH</item>
+        <item>NJ</item>
+        <item>NM</item>
+        <item>NY</item>
+        <item>NC</item>
+        <item>ND</item>
+        <item>OH</item>
+        <item>OK</item>
+        <item>OR</item>
+        <item>PA</item>
+        <item>PI</item>
+        <item>SC</item>
+        <item>SD</item>
+        <item>TN</item>
+        <item>TX</item>
+        <item>UT</item>
+        <item>VT</item>
+        <item>VA</item>
+        <item>WA</item>
+        <item>WV</item>
+        <item>WI</item>
+        <item>WY</item>
+    </string-array>
+
+    <string name="title_activity_result">ResultActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_try">TryAct</string>
+    <string name="title_activity_basic_info">BasicInfo</string>
+    <string name="title_activity_post">Post</string>
+
+</resources>

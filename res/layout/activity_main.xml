@@ -1,0 +1,178 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.first.zillowpark.MainActivity" >
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/heading"
+        android:textColor="#ffffff"
+        android:textSize="22sp"        
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lbladdr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/address"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="bold" 
+        android:layout_alignLeft="@+id/heading"
+         android:layout_below="@+id/heading"/>
+
+    <EditText
+        android:id="@+id/edit_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lbladdr"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lbladdr"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rectangle_edit"
+        android:ems="10"
+        android:hint="@string/edit_address"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+    <TextView
+        android:id="@+id/addrerror"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_address"
+        android:layout_below="@+id/edit_address"
+        android:layout_marginTop="3dp"        
+        android:textColor="#FF0000"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+<TextView
+        android:id="@+id/lblcity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/addrerror"
+        android:layout_below="@+id/addrerror"
+        android:layout_marginTop="20dp"
+        android:text="@string/city"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+<EditText
+    android:id="@+id/edit_city"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/lblcity"
+    android:layout_alignRight="@+id/edit_address"
+    android:layout_below="@+id/lblcity"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/rectangle_edit"
+    android:ems="10"
+    android:hint="@string/edit_city"
+    android:inputType="text" >
+        
+        <requestFocus />
+    </EditText>
+    <TextView
+        android:id="@+id/cityerror"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_city"
+        android:layout_below="@+id/edit_city"
+        android:layout_marginTop="3dp"        
+        android:textColor="#FF0000"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/lblstate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/state"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="bold" 
+        android:layout_alignLeft="@+id/cityerror"
+        android:layout_below="@+id/cityerror"/>
+     
+     <Spinner
+         android:id="@+id/spinnerst"
+         android:layout_width="15dp"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/lblstate"
+         android:layout_alignRight="@+id/edit_city"
+         android:layout_below="@+id/lblstate"
+         android:layout_marginTop="8dp"
+         android:background="@drawable/rectangle_edit"
+         android:drawSelectorOnTop="true"
+         android:dropDownWidth="wrap_content"
+         android:entries="@array/state_array"
+         android:prompt="@string/choose_state"
+         android:spinnerMode="dropdown"
+         android:textSize="14sp" />
+     
+<TextView
+        android:id="@+id/stateerror"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinnerst"
+        android:layout_below="@+id/spinnerst"
+        android:layout_marginTop="3dp"        
+        android:textColor="#FF0000"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+     <Button
+         android:id="@+id/btnSearch"
+         android:layout_width="100dp"
+         android:layout_height="40dp"
+         android:layout_alignLeft="@+id/stateerror"
+         android:layout_below="@+id/stateerror"
+         android:layout_marginTop="15dp"
+         android:text="@string/search"
+         android:textSize="16sp" 
+          android:onClick="onSearchClick"
+         android:background="#D3D3D3" />
+<ImageView
+         android:id="@+id/zlogo"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/zillowlogo"
+         android:layout_alignRight="@+id/spinnerst"
+         android:layout_below="@+id/spinnerst"
+         android:layout_marginTop="30dp" 
+         
+         />
+<View
+    android:id="@+id/horzline"
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="#FFFFFF"
+    android:layout_marginTop="12dp"
+     android:layout_alignLeft="@+id/btnSearch"
+        android:layout_below="@+id/btnSearch"/>
+
+     <TextView
+        android:id="@+id/testphpid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/horzline"
+        android:layout_below="@+id/horzline"
+        android:layout_marginTop="8dp"        
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+     
+     
+     
+</RelativeLayout>
